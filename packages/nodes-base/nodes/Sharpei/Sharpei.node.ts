@@ -1,14 +1,14 @@
 import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
-import { productFields, productOperations } from './ProductDescription';
-import { variantFields, variantOperations } from './VariantDescriptions';
-import { statusOperations } from './StatusDescription';
-import { optionsFields, optionsOperations } from './OptionsDescriptions';
-import { ordersFields, ordersOperations } from './OrdersDescription';
-import { customersFields, customersOperations } from './CustomersDescriptions';
+import { productFields, productOperations } from './descriptions/ProductDescription';
+import { variantFields, variantOperations } from './descriptions/VariantDescriptions';
+import { statusOperations } from './descriptions/StatusDescription';
+import { optionsFields, optionsOperations } from './descriptions/OptionsDescriptions';
+import { ordersFields, ordersOperations } from './descriptions/OrdersDescription';
+import { customersFields, customersOperations } from './descriptions/CustomersDescriptions';
 
 export class Sharpei implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Sharpei1',
+		displayName: 'Sharpei',
 		name: 'sharpei',
 		// eslint-disable-next-line n8n-nodes-base/node-class-description-icon-not-svg
 		icon: 'file:logo.png',
