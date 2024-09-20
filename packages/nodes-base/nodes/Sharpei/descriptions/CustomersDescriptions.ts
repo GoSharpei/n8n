@@ -65,7 +65,7 @@ export const customersOperations: INodeProperties[] = [
 					request: {
 						method: 'PUT',
 						url: '={{"/customer/" + $parameter["customerPid"]}}',
-						body: '={{ JSON.parse($parameter["productDataJson2"]) }}',
+						body: '={{ JSON.parse($parameter["customerDataJson"]) }}',
 						headers: {
 							Accept: 'application/json',
 							'Content-Type': 'application/json',
